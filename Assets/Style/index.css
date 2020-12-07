@@ -1,0 +1,449 @@
+body {
+  font-size: 100%;
+  color: #080808;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  line-height: 120%;
+  width: 80%;
+  margin: 0 auto;
+  padding: 4em;
+  /*Bild som bakgrund*/
+  background-image: url("../Img/D-23.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+main {
+  width: 90%;
+  background-color: rgba(255, 255, 255, 0.9);
+  margin-top: 20px;
+  text-align: center;
+  padding: 5% 5% 1% 5%;
+}
+
+h1 {
+  font-size: 300%;
+  letter-spacing: 3px;
+  line-height: 180%;
+  margin: 2% 2% 5%;
+  text-align: center;
+  height: 75px;
+}
+
+h2 {
+  font-size: 150%;
+  letter-spacing: 3px;
+  line-height: 200%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+h3 {
+  font-size: 130%;
+  letter-spacing: 3px;
+  line-height: 180%;
+  margin-top: 2%;
+}
+
+h4 {
+  font-size: 110%;
+  letter-spacing: 3px;
+  line-height: 180%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+h5 {
+  font-size: 90%;
+  letter-spacing: 3px;
+  line-height: 180%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  text-align: center;
+}
+
+p,
+th {
+  font-size: 100%;
+  letter-spacing: 2px;
+  line-height: 180%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  text-align: left;
+}
+
+label,
+input {
+  font-size: 80%;
+  letter-spacing: 2px;
+  line-height: 180%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  text-align: left;
+  vertical-align: baseline;
+}
+
+input {
+  display: block;
+  direction: ltr;
+}
+
+fieldset {
+  text-align: left;
+}
+
+table {
+  text-align: center;
+  border-collapse: collapse;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+
+time {
+  font-size: 100%;
+  letter-spacing: 2px;
+  line-height: 180%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+#namn,
+#namnforklaring {
+  font-weight: 700;
+}
+
+#fnamn,
+#enamn,
+#mail,
+#telnummer {
+  font-weight: 700;
+}
+
+#indeximg {
+  width: 50%;
+  height: auto;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Add a background color to the top navigation bar */
+.nav {
+  background-color: #4d6f79;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* Change the color of links on hover */
+.nav li:hover {
+  background-color: #91908f;
+  color: #1d4a57;
+}
+
+/* Add a color to the active link */
+.nav li.active {
+  background-color: #1d4a57;
+  color: #e2dccb;
+}
+
+nav li {
+  padding: 1% 0% 1% 0%;
+}
+
+tr:nth-child(even) {
+  background: #dae3e6;
+}
+tr:nth-child(odd) {
+  background: #fff;
+}
+
+#gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /*3 delar bildar tre grids*/
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 3px;
+  margin: auto;
+}
+
+#gallery img {
+  grid-column-start: auto; /*Bild startar i första kolumnen*/
+  grid-column-end: auto;
+  grid-row-start: auto;
+  grid-row-end: auto;
+  max-width: 200px;
+  max-height: 300px;
+}
+
+#gallery img:hover {
+  transform: scale(1.5);
+  transition: 0.5s ease-in;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#anslagstavla {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /*3 delar bildar tre grids*/
+  grid-template-rows: 1fr;
+  gap: 3px;
+  justify-items: center;
+}
+
+#anslagstavla p {
+  font-size: 13;
+}
+
+@media screen and (min-width: 1001px) {
+  /* Styles the links inside the navigation bar */
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-self: center;
+  }
+
+  .nav a {
+    float: left;
+    color: #f7f5f1;
+    text-align: center;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .nav li {
+    float: left;
+    color: #f7f5f1;
+    text-align: center;
+    text-decoration: none;
+    /*padding: 8px 12px;*/
+  }
+
+  th {
+    font-size: 100%;
+  }
+
+  #aktuellt {
+    width: 44%;
+    float: left;
+  }
+
+  #kommande {
+    margin-left: 0%;
+    margin-right: 5%;
+    width: 44%;
+    float: right;
+    margin-bottom: 5px;
+  }
+}
+@media screen and (max-width: 1000px) and (min-width: 821px) {
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-self: center;
+  }
+
+  .nav a {
+    float: left;
+    color: #f7f5f1;
+    text-align: center;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .nav li {
+    float: left;
+    color: #f7f5f1;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  th {
+    font-size: 100%;
+  }
+
+  #gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /*2 delar bildar tre grids*/
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 3px;
+  }
+
+  #aktuellt {
+    width: 44%;
+    float: left;
+  }
+
+  #kommande {
+    margin-left: 0%;
+    margin-right: 5%;
+    width: 44%;
+    float: right;
+    margin-bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 820px) and (min-width: 661px) {
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-self: center;
+  }
+
+  .nav a {
+    float: left;
+    color: #f7f5f1;
+    text-align: center;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    font-size: 12px;
+  }
+
+  .nav li {
+    float: left;
+    color: #f7f5f1;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  footer {
+    font-size: 14px;
+  }
+
+  th {
+    display: block;
+  }
+
+  #fnamn,
+  #enamn,
+  #mail,
+  #telnummer {
+    display: none;
+  }
+
+  #akt,
+  #komm {
+    font-size: 140%;
+  }
+
+  #anslagstavla_akt,
+  #anslagstavla_kom {
+    font-size: 100%;
+  }
+
+  #gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /*2 delar bildar tre grids*/
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 3px;
+  }
+
+  #aktuellt {
+    width: 44%;
+    float: left;
+  }
+
+  #kommande {
+    margin-left: 0%;
+    margin-right: 5%;
+    width: 44%;
+    float: right;
+    margin-bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  nav ul {
+    justify-content: left;
+    justify-self: center;
+  }
+
+  .nav a {
+    color: #f7f5f1;
+    text-align: center;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    font-size: 12px;
+  }
+
+  .nav li {
+    color: #f7f5f1;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  footer {
+    font-size: 14px;
+  }
+
+  th {
+    display: block;
+  }
+
+  #fnamn,
+  #enamn,
+  #mail,
+  #telnummer {
+    display: none;
+  }
+
+  h2 {
+    font-size: 120%;
+  }
+  #anslagstavla_akt,
+  #anslagstavla_kom {
+    font-size: 100%;
+  }
+
+  #akt,
+  #komm {
+    font-size: 140%;
+  }
+
+  #anslagstavla {
+    display: block;
+  }
+
+  #gallery {
+    display: grid;
+    grid-template-columns: 1fr; /*2 delar bildar tre grids*/
+    grid-template-rows: repeat(8, 1fr);
+    gap: 3px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  img {
+    width: 100px;
+    height: 150px;
+  }
+  #skeppsättning,
+  #hamnbild {
+    width: 150px;
+    height: 100px;
+  }
+}
